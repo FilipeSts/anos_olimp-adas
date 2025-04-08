@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anos das Olimpíadas</title>
+</head>
+
+<body>
+    <script>
+        var mostra = function (frase) {
+            document.write(frase + "<br>");
+        }
+
+        var todoTempo = prompt("Informe o ano inicial que deseja saber:");
+        var anoOlimpiadas = parseInt(todoTempo);
+        var anoFim = parseInt(prompt("Até que ano você deseja saber?"));
+
+        while (anoOlimpiadas <= anoFim) {
+            mostra(anoOlimpiadas + " tem Olimpíadas!");
+            anoOlimpiadas += 4;
+        }
+
+        mostra("Esses foram os anos de Olimpíadas entre " + todoTempo + " e " + anoFim + ".");
+    </script>
+</body>
+
+</html>
